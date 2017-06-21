@@ -67,8 +67,8 @@ class SafeAsIgnite extends React.Component {
         <CheckBox
           title={rowData.title}
           left
-          checked={true}
-          uncheckedIcon='circle-o'
+          checked={false}
+          uncheckedIcon='square-o'
         />
 
     )
