@@ -13,7 +13,8 @@ export default StyleSheet.create({
     backgroundColor: Colors.checklist,
     marginVertical: Metrics.smallMargin,
     marginHorizontal: Metrics.marginHorizontal,
-    justifyContent: 'center',
+    alignSelf: 'flex-start',
+    padding: 10,
   },
   boldLabel: {
     fontWeight: 'bold',

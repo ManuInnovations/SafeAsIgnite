@@ -7,14 +7,14 @@ export default StyleSheet.create({
     borderRadius: 5,
     marginHorizontal: Metrics.section,
     marginVertical: Metrics.baseMargin,
-    backgroundColor: Colors.fire,
-    justifyContent: 'center'
+    backgroundColor: Colors.navbarbg,
+    justifyContent: 'center',
   },
   buttonText: {
     color: Colors.snow,
     textAlign: 'center',
     fontWeight: 'bold',
-    fontSize: Fonts.size.medium,
+    fontSize: Fonts.size.input,
     marginVertical: Metrics.baseMargin
   }
 })

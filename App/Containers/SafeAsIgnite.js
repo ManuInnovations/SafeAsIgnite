@@ -9,6 +9,8 @@ import { connect } from 'react-redux'
 import styles from './Styles/SafeAsIgniteStyle'
 
 import NavBar from '../Components/NavBar'
+import RoundedButton from '../Components/RoundedButton'
+
 
 class SafeAsIgnite extends React.Component {
   state: {
@@ -23,14 +25,13 @@ class SafeAsIgnite extends React.Component {
     * Usually this should come from Redux mapStateToProps
     *************************************************************/
     const dataObjects = [
-      {title: 'First Title', description: 'First Description'},
-      {title: 'Second Title', description: 'Second Description'},
-      {title: 'Third Title', description: 'Third Description'},
-      {title: 'Fourth Title', description: 'Fourth Description'},
-      {title: 'Fifth Title', description: 'Fifth Description'},
-      {title: 'Sixth Title', description: 'Sixth Description'},
-      {title: 'Seventh Title', description: 'Seventh Description'}
-    ]
+      {title:'I know the site contact details'},
+      {title:'I need a site escort'},
+      {title:'I know where emergency exits are'},
+      {title:'I have had the right safety training'},
+      {title:'I have the correct PPE'},
+      {title:'I have the correct tools for the job'},
+      {title:'I need to let someone know where I am'}]
 
     /* ***********************************************************
     * STEP 2
@@ -60,8 +61,9 @@ class SafeAsIgnite extends React.Component {
   renderRow (rowData) {
     return (
       <View style={styles.row}>
-        <Text style={styles.boldLabel}>{rowData.title}</Text>
-        <Text style={styles.label}>{rowData.description}</Text>
+        <Text style={styles.boldLabel}>
+          {rowData.title}
+        </Text>
       </View>
     )
   }
@@ -118,6 +120,8 @@ class SafeAsIgnite extends React.Component {
           enableEmptySections
           pageSize={15}
         />
+
+        <RoundedButton />
       </View>
     )
   }
