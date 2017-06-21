@@ -7,8 +7,10 @@ navbar: {
   backgroundColor: Colors.navbarbg,
   marginBottom: 10,
   flexDirection: 'row',
-  height: 40,
-  padding: 5,
+  height: 80,
+  paddingTop: 40,
+  paddingLeft: 15,
+  paddingRight: 15,
   justifyContent: 'center',
 },
 logo:{

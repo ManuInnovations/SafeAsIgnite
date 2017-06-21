@@ -6,12 +6,13 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.background,
-    padding: 30,
+    padding: 0,
   },
   row: {
     flex: 1,
     backgroundColor: Colors.checklist,
     marginVertical: Metrics.smallMargin,
+    marginHorizontal: Metrics.marginHorizontal,
     justifyContent: 'center',
   },
   boldLabel: {
@@ -37,5 +38,5 @@ export default StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  
+
 })
