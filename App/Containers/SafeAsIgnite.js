@@ -10,6 +10,7 @@ import styles from './Styles/SafeAsIgniteStyle'
 
 import NavBar from '../Components/NavBar'
 import RoundedButton from '../Components/RoundedButton'
+import CheckBox from 'react-native-checkbox'
 
 
 class SafeAsIgnite extends React.Component {
@@ -64,6 +65,7 @@ class SafeAsIgnite extends React.Component {
         <Text style={styles.boldLabel}>
           {rowData.title}
         </Text>
+  
       </View>
     )
   }

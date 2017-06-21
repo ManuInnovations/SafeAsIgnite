@@ -13,12 +13,12 @@ export default StyleSheet.create({
     backgroundColor: Colors.checklist,
     marginVertical: Metrics.smallMargin,
     marginHorizontal: Metrics.marginHorizontal,
-    alignSelf: 'flex-start',
     padding: 10,
+    width: 300,
   },
   boldLabel: {
     fontWeight: 'bold',
-    alignSelf: 'center',
+    alignSelf: 'flex-start',
     color: Colors.snow,
     textAlign: 'center',
     marginBottom: Metrics.smallMargin
@@ -33,6 +33,8 @@ export default StyleSheet.create({
   welcome: {
     textAlign: 'center',
     fontSize: 20,
+    marginBottom: 10,
+    marginHorizontal: 20,
   },
   bodyText: {
     textAlign: 'center',
