@@ -6,7 +6,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.background,
-    padding: 20,
+    padding: 30,
   },
   row: {
     flex: 1,
@@ -35,5 +35,7 @@ export default StyleSheet.create({
   bodyText: {
     textAlign: 'center',
     fontSize: 18,
-  }
+    fontWeight: 'bold',
+  },
+  
 })

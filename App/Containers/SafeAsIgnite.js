@@ -8,6 +8,8 @@ import { connect } from 'react-redux'
 // Styles
 import styles from './Styles/SafeAsIgniteStyle'
 
+import NavBar from '../Components/NavBar'
+
 class SafeAsIgnite extends React.Component {
   state: {
     dataSource: Object
@@ -99,9 +101,10 @@ class SafeAsIgnite extends React.Component {
     return (
       <View style={styles.container}>
 
+        <NavBar />
 
         <Text style={styles.welcome}>
-          Welcome to Safe-As. This app will help you create a Health and Safety Site Visit report.
+          Welcome. This app will help you create a Health and Safety Site Visit report.
         </Text>
 
         <Text style={styles.bodyText}>
@@ -112,7 +115,6 @@ class SafeAsIgnite extends React.Component {
           contentContainerStyle={styles.listContent}
           dataSource={this.state.dataSource}
           renderRow={this.renderRow}
-          renderFooter={this.renderFooter}
           enableEmptySections
           pageSize={15}
         />

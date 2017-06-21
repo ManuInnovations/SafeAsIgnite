@@ -23,6 +23,7 @@ const colors = {
   banner: '#5F3E63',
   text: '#E0D7E5',
   checklist: '#db504a',
+  navbarbg: '#0c1b33',
 }
 
 export default colors
