@@ -32,13 +32,13 @@ export default StyleSheet.create({
   },
   welcome: {
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: 18,
     marginBottom: 10,
     marginHorizontal: 20,
   },
   bodyText: {
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: 'bold',
   },
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import { View, Text, ListView } from 'react-native'
 import { connect } from 'react-redux'
+import { CheckBox } from 'react-native-elements'
+
 
 // For empty lists
 // import AlertMessage from '../Components/AlertMessage'
@@ -10,7 +12,6 @@ import styles from './Styles/SafeAsIgniteStyle'
 
 import NavBar from '../Components/NavBar'
 import RoundedButton from '../Components/RoundedButton'
-import CheckBox from 'react-native-checkbox'
 
 
 class SafeAsIgnite extends React.Component {
@@ -47,7 +48,8 @@ class SafeAsIgnite extends React.Component {
 
     // Datasource is always in state
     this.state = {
-      dataSource: ds.cloneWithRows(dataObjects)
+      dataSource: ds.cloneWithRows(dataObjects),
+      checked: {},
     }
   }
 
@@ -61,12 +63,14 @@ class SafeAsIgnite extends React.Component {
   *************************************************************/
   renderRow (rowData) {
     return (
-      <View style={styles.row}>
-        <Text style={styles.boldLabel}>
-          {rowData.title}
-        </Text>
-  
-      </View>
+
+        <CheckBox
+          title={rowData.title}
+          left
+          checked={true}
+          uncheckedIcon='circle-o'
+        />
+
     )
   }
 
